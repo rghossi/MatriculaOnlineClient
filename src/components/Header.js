@@ -6,6 +6,7 @@ class Header extends Component {
     return (
       <nav>
         <div className="nav-wrapper">
+          <a href="#" data-activates="slide-out" className="button-collapse"><i className="material-icons">menu</i></a>
           <a href="#" className="brand-logo"><img src={uenf} alt="logo" /></a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li><a href="/">About</a></li>

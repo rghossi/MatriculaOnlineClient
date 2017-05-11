@@ -1,0 +1,9 @@
+nav, .container {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  nav, .container {
+    padding-left: 0;
+  }
+}
