@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from "react-router";
 
 class SideNav extends Component {
   render() {
@@ -18,7 +19,7 @@ class SideNav extends Component {
           <li><a className="subheader">Menu</a></li>
           <li><a className="waves-effect indigo-text" href="#!">Pré Matrícula</a></li>
           <li><a className="waves-effect indigo-text" href="#!">Inclusão/Exclusão</a></li>
-          <li><a className="waves-effect indigo-text" href="/grade">Grade Curricular</a></li>
+          <li><Link className="waves-effect indigo-text" to="/grade" >Grade Curricular</Link></li>
           <li><a className="waves-effect indigo-text" href="#!">Plano de Estudos</a></li>
           <li><a className="waves-effect indigo-text" href="#!">Quebra de Requisito</a></li>
           <li><a className="waves-effect indigo-text" href="#!">Extrato</a></li>
