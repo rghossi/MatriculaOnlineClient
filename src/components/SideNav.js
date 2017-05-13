@@ -16,13 +16,13 @@ class SideNav extends Component {
           <li><a href="#!"><i className="material-icons">cloud</i>Meu Perfil</a></li>
           <li><div className="divider"></div></li>
           <li><a className="subheader">Menu</a></li>
-          <li><a className="waves-effect" href="#!">Pré Matrícula</a></li>
-          <li><a className="waves-effect" href="#!">Inclusão/Exclusão</a></li>
-          <li><a className="waves-effect" href="#!">Grade Curricular</a></li>
-          <li><a className="waves-effect" href="#!">Plano de Estudos</a></li>
-          <li><a className="waves-effect" href="#!">Quebra de Requisito</a></li>
-          <li><a className="waves-effect" href="#!">Extrato</a></li>
-          <li><a className="waves-effect" href="#!">Declaração de Matrícula</a></li>
+          <li><a className="waves-effect indigo-text" href="#!">Pré Matrícula</a></li>
+          <li><a className="waves-effect indigo-text" href="#!">Inclusão/Exclusão</a></li>
+          <li><a className="waves-effect indigo-text" href="/grade">Grade Curricular</a></li>
+          <li><a className="waves-effect indigo-text" href="#!">Plano de Estudos</a></li>
+          <li><a className="waves-effect indigo-text" href="#!">Quebra de Requisito</a></li>
+          <li><a className="waves-effect indigo-text" href="#!">Extrato</a></li>
+          <li><a className="waves-effect indigo-text" href="#!">Declaração de Matrícula</a></li>
         </ul>
       </div>
     );
