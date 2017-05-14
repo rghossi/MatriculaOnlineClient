@@ -5,6 +5,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import Login from './components/Login';
 import TelaInicial from './components/TelaInicial';
 import GradeCurricular from './components/GradeCurricular';
+import PlanoDeEstudos from './components/PlanoDeEstudos';
 
 function isLoggedIn() {
 	if (true) {
@@ -21,6 +22,7 @@ const Routes = (
 	  <Route path="/" component={App} onEnter={isLoggedIn}>
 	    <IndexRoute component={TelaInicial}/>
 	    <Route path="/grade" component={GradeCurricular} />
+	    <Route path="/planodeestudos" component={PlanoDeEstudos} />
 	  </Route>
   </div>
 );

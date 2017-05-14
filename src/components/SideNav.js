@@ -14,16 +14,17 @@ class SideNav extends Component {
             <a href="#!name"><span className="white-text name">John Doe</span></a>
             <a href="#!email"><span className="white-text email">jdandturk@gmail.com</span></a>
           </div></li>
-          <li><a href="#!"><i className="material-icons">cloud</i>Meu Perfil</a></li>
+          <li><a href="#!"><i className="material-icons">account_circle</i>Meu Perfil</a></li>
           <li><div className="divider"></div></li>
-          <li><a className="subheader">Menu</a></li>
-          <li><a className="waves-effect indigo-text" href="#!">Pré Matrícula</a></li>
-          <li><a className="waves-effect indigo-text" href="#!">Inclusão/Exclusão</a></li>
-          <li><Link className="waves-effect indigo-text" to="/grade" >Grade Curricular</Link></li>
-          <li><a className="waves-effect indigo-text" href="#!">Plano de Estudos</a></li>
-          <li><a className="waves-effect indigo-text" href="#!">Quebra de Requisito</a></li>
-          <li><a className="waves-effect indigo-text" href="#!">Extrato</a></li>
-          <li><a className="waves-effect indigo-text" href="#!">Declaração de Matrícula</a></li>
+          <li><a className="waves-effect indigo-text darken-4" href="#!">Menu</a></li>
+          <li><a className="waves-effect indigo-text darken-4" href="#!">Pré Matrícula</a></li>
+          <li><a className="waves-effect indigo-text darken-4" href="#!">Inclusão/Exclusão</a></li>
+          <li><Link className="waves-effect indigo-text darken-4" to="/grade" >Grade Curricular</Link></li>
+          <li><Link className="waves-effect indigo-text darken-4" to="/planodeestudos">Plano de Estudos</Link></li>
+          <li><a className="waves-effect indigo-text darken-4" href="#!">Quebra de Requisito</a></li>
+          <li><a className="waves-effect indigo-text darken-4" href="#!">Extrato</a></li>
+          <li><a className="waves-effect indigo-text darken-4" href="#!">Declaração de Matrícula</a></li>
+          <li><a className="waves-effect indigo-text darken-4" href="#!">Contate-nos</a></li>
         </ul>
       </div>
     );
