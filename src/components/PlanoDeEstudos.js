@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import grade1 from './imagens/grade1.png';
+// import grade1 from './imagens/grade1.png';
 
 class PlanoDeEstudos extends Component {
   render() {

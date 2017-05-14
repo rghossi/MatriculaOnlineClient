@@ -7,7 +7,7 @@ class GradeCurricular extends Component {
       <div>
         <div className="section"></div>
         <div className="section"></div>
-        <img className="materialboxed" style={{width: '700'}} src={grade1} />
+        <img className="materialboxed" alt="gradeCurricular" style={{width: '700'}} src={grade1} />
         <div className="section"></div>
         <div className="section"></div>
       </div>

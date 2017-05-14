@@ -7,10 +7,10 @@ class Login extends Component {
 		  <main className="indigo">
 		    <center>
 		      <div className="section"></div>
-		      <img className="responsive-img" style={{width: '250px'}} src={logoUenf} />
+		      <img className="responsive-img" alt="uenf" style={{width: '250px'}} src={logoUenf} />
 		      <div className="section"></div>
 
-		      <div className="container">
+		      <div id="login-container" className="container">
 		        <div className="z-depth-1 grey lighten-4 row" style={{display: 'inline-block', padding: '32px 48px 0px 48px', border: '1px solid #EEE'}}>
 
 		          <form className="col s12" method="post">
@@ -23,14 +23,14 @@ class Login extends Component {
 		            <div className='row'>
 		              <div className='input-field col s12'>
 		                <input className='validate' type='text' required="required" name='numbers' id='numbers' pattern="[0-9]+$" />
-		                <label for='numbers'>Digite sua matricula</label>
+		                <label htmlFor='numbers'>Digite sua matricula</label>
 		              </div>
 		            </div>
 
 		            <div className='row'>
 		              <div className='input-field col s12'>
 		                <input className='validate' type='password' name='password' id='password' />
-		                <label for='password'>Digite sua senha</label>
+		                <label htmlFor='password'>Digite sua senha</label>
 		              </div>
 		              <label style={{float: 'right'}}>
 		                <a className='pink-text' href='#!'><b>Esqueceu sua senha?</b></a>
@@ -40,7 +40,7 @@ class Login extends Component {
 		            <div className="row">          
 		              <div className='input-field col s12'>
 		                  <input type="checkbox" id="remember-me" />
-		                  <label for="remember-me">Lembrar senha</label>
+		                  <label htmlFor="remember-me">Lembrar senha</label>
 		              </div>
 		            </div>
 
