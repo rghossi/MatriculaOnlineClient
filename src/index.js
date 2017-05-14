@@ -8,7 +8,7 @@ import GradeCurricular from './components/GradeCurricular';
 import PlanoDeEstudos from './components/PlanoDeEstudos';
 
 function isLoggedIn() {
-	if (true) {
+	if (localStorage.getItem('mAluno') && localStorage.getItem('sAluno')) {
 		return true;
 	} else {
 		browserHistory.push("/login");

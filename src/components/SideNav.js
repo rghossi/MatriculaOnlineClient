@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import {Link} from "react-router";
 
 class SideNav extends Component {
+  logout() {
+    localStorage.removeItem('mAluno');
+    localStorage.removeItem('sAluno');
+  }
+
   render() {
     return (
       <div className="user-side-nav">
@@ -25,6 +30,7 @@ class SideNav extends Component {
           <li><a className="waves-effect indigo-text darken-4" href="#!">Extrato</a></li>
           <li><a className="waves-effect indigo-text darken-4" href="#!">Declaração de Matrícula</a></li>
           <li><a className="waves-effect indigo-text darken-4" href="#!">Contate-nos</a></li>
+          <li><Link className="waves-effect indigo-text darken-4" to="/login" onClick={this.logout}>Sair</Link></li>
         </ul>
       </div>
     );
