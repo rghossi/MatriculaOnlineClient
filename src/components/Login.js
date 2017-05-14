@@ -38,6 +38,7 @@ class Login extends Component {
 	    browserHistory.push('/');
 	  })
 	  .catch((error) => {
+	  	alert("Login inválido, tente novamente com outras credenciais.")
 	    console.log(error);
 	    this.setState({loading: false});
 	  });
