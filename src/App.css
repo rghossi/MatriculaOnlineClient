@@ -1,5 +1,9 @@
 nav, .container {
-  padding-left: 300px;
+  padding-left: 0;
+}
+
+#logotipouenf {
+	padding-left: 10px;
 }
 
 #login-container {
