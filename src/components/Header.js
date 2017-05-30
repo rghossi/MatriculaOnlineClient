@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Link} from "react-router";
 import logoUenf from './imagens/logoUenf.png';
+import { browserHistory } from 'react-router';
 
 class Header extends Component {
   render() {
@@ -15,14 +15,14 @@ class Header extends Component {
             </div>
             <div className="nav-content">
               <ul className="tabs tabs-transparent">
-                <li className="tab"><a href="#">Pré-Matrícula</a></li>
-                <li className="tab"><a href="#">Inclusão/Exclusão</a></li>
-                <li className="tab"><a href="#">Grade Curricular</a></li>
-                <li className="tab"><a><Link to="/grade" >Grade Curricularpp</Link></a></li>
-                <li className="tab"><a href="#">Plano de estudos</a></li>
-                <li className="tab"><a href="#">Quebra de requisito</a></li>
-                <li className="tab"><a href="#">Extrato</a></li>
-                <li className="tab"><a href="#">Contate-nos</a></li>
+
+                <li className="tab"><a onClick={() => browserHistory.push('pre-matricula')}>Pré-Matrícula</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('inclusao-exclusao')}>Inclusão/Exclusão</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('grade')}>Grade Curricular</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('plano-estudos')}>Plano de estudos</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('quebra-requisitos')}>Quebra de requisito</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('extrato')}>Extrato</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('contate-nos')}>Contate-nos</a></li>
               </ul>
             </div>
         </nav>

@@ -22,7 +22,7 @@ const Routes = (
 	  <Route path="/" component={App} onEnter={isLoggedIn}>
 	    <IndexRoute component={TelaInicial}/>
 	    <Route path="/grade" component={GradeCurricular} />
-	    <Route path="/planodeestudos" component={PlanoDeEstudos} />
+	    <Route path="/plano-estudos" component={PlanoDeEstudos} />
 	  </Route>
   </div>
 );
