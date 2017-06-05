@@ -6,6 +6,8 @@ import Login from './components/Login';
 import TelaInicial from './components/TelaInicial';
 import GradeCurricular from './components/GradeCurricular';
 import PlanoDeEstudos from './components/PlanoDeEstudos';
+import InclusaoExclusao from './components/InclusaoExclusao';
+import PreMatricula from './components/PreMatricula';
 
 function isLoggedIn() {
 	if (localStorage.getItem('mAluno') && localStorage.getItem('sAluno')) {
@@ -23,6 +25,8 @@ const Routes = (
 	    <IndexRoute component={TelaInicial}/>
 	    <Route path="/grade" component={GradeCurricular} />
 	    <Route path="/plano-estudos" component={PlanoDeEstudos} />
+	    <Route path="/inclusao-exclusao" component={InclusaoExclusao} />
+	    <Route path="/pre-matricula" component={PreMatricula} />
 	  </Route>
   </div>
 );
