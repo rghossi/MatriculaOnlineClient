@@ -77,7 +77,7 @@ class PlanoDeEstudos extends Component {
 
                           <div className="card cyan">
                             <div className="card-content indigo-text text-darken-4 center-align tooltipped" data-delay="50" data-tooltip="Sala 109 - CCT">
-                              <p><b>Fisica I</b></p>
+                              <p><b>Geomatria</b></p>
                               <p>10:00 - 12:00</p>
                             </div>
                           </div>
@@ -90,7 +90,7 @@ class PlanoDeEstudos extends Component {
 
                           <div className="card cyan">
                             <div className="card-content indigo-text text-darken-4 center-align tooltipped" data-delay="50" data-tooltip="Sala 109 - CCT">
-                              <p><b>Programação I</b></p>
+                              <p><b>Lógica Mat</b></p>
                               <p>14:00 - 16:00</p>
                             </div>
                           </div>
@@ -104,7 +104,7 @@ class PlanoDeEstudos extends Component {
 
                           <div className="card cyan">
                             <div className="card-content indigo-text text-darken-4 center-align tooltipped" data-delay="50" data-tooltip="Sala 109 - CCT">
-                              <p><b>Programação I</b></p>
+                              <p><b>Inglês I</b></p>
                               <p>18:00 - 20:00</p>
                             </div>
                           </div>
@@ -181,7 +181,7 @@ class PlanoDeEstudos extends Component {
 
                           <div className="card cyan">
                             <div className="card-content indigo-text text-darken-4 center-align tooltipped" data-delay="50" data-tooltip="Sala 109 - CCT">
-                              <p><b>Fisica I</b></p>
+                              <p><b>Geometria</b></p>
                               <p>10:00 - 12:00</p>
                             </div>
                           </div>
@@ -194,7 +194,7 @@ class PlanoDeEstudos extends Component {
 
                           <div className="card cyan">
                             <div className="card-content indigo-text text-darken-4 center-align tooltipped" data-delay="50" data-tooltip="Sala 109 - CCT">
-                              <p><b>Programação I</b></p>
+                              <p><b>Lógica Mat</b></p>
                               <p>14:00 - 16:00</p>
                             </div>
                           </div>
@@ -208,7 +208,7 @@ class PlanoDeEstudos extends Component {
 
                           <div className="card cyan">
                             <div className="card-content indigo-text text-darken-4 center-align tooltipped" data-delay="50" data-tooltip="Sala 109 - CCT">
-                              <p><b>Programação I</b></p>
+                              <p><b>Inglês I</b></p>
                               <p>18:00 - 20:00</p>
                             </div>
                           </div>
