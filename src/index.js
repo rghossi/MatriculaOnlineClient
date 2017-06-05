@@ -7,6 +7,7 @@ import TelaInicial from './components/TelaInicial';
 import GradeCurricular from './components/GradeCurricular';
 import PlanoDeEstudos from './components/PlanoDeEstudos';
 import InclusaoExclusao from './components/InclusaoExclusao';
+import PreMatriculaInicial from './components/PreMatriculaInicial';
 import PreMatricula from './components/PreMatricula';
 
 function isLoggedIn() {
@@ -26,6 +27,7 @@ const Routes = (
 	    <Route path="/grade" component={GradeCurricular} />
 	    <Route path="/plano-estudos" component={PlanoDeEstudos} />
 	    <Route path="/inclusao-exclusao" component={InclusaoExclusao} />
+	    <Route path="/pre-matricula-inicial" component={PreMatriculaInicial} />
 	    <Route path="/pre-matricula" component={PreMatricula} />
 	  </Route>
   </div>
