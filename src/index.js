@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import Admin from './components/Admin';
 import Login from './components/Login';
 import TelaInicial from './components/TelaInicial';
 import GradeCurricular from './components/GradeCurricular';
@@ -32,6 +33,7 @@ const Routes = (
 	    <Route path="/pre-matricula" component={PreMatricula} />
 	    <Route path="/quebra-requisitos" component={QuebraPreRequisito} />
 	  </Route>
+	  <Route path="/admin" component={Admin} />
   </div>
 );
 

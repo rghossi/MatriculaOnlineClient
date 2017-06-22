@@ -18,7 +18,13 @@ nav, .container {
   }
 }
 
+.reject-quebra {
+  color: red;
+}
 
+.green {
+  background-color: green;
+}
 
 
 /* -------------------- TESTE SELECT */

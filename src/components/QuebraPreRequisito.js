@@ -13,7 +13,7 @@ class QuebraPreRequisito extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://mo-api.herokuapp.com/api/disciplinas-disponiveis-para-quebra-de-requisito', { 
+    axios.post('https://mo-api.herokuapp.com/api/disciplinas-disponiveis-para-quebra-de-requisito', { 
       matricula: localStorage.getItem('mAluno')
     })
     .then((res) => {
