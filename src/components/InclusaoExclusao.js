@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import grade1 from './imagens/grade1.png';
 
 class InclusaoExclusao extends Component {
   render() {
