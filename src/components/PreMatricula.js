@@ -7,39 +7,77 @@ class PreMatricula extends Component {
         <div className="section"></div>
         <h4 className="center-align indigo-text darken-4">Matérias disponíveis</h4>
 
-        <ul className="collection">
-          <li className="collection-item">
-            <span className="title"><b>Calculo 1</b></span>
-            <p>Segunda 8:00 - 10:00 <br />
-            Quarta 8:00 - 10:00</p>
+        <br />
+        <br />
+        <table className="bordered">
+          <thead>
+            <tr>
+                <th className="tam-checkbox"></th>
+                <th className="tam-nome">Matéria</th>
+                <th className="">Horário 1</th>
+                <th className="">Horário 2</th>
+                <th className="tam-creditos">Créditos</th>
+            </tr>
+          </thead>
 
-            <a className="secondary-content"><a className="waves-effect waves-light btn-large indigo">Escolher</a></a>
-          </li>
-          <li className="collection-item avatar">
-            <span className="title">Title</span>
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox" className="filled-in" id="filled-in-box" checked="checked" />
+                <label for="filled-in-box"></label>
+              </td>
+              <td>Cálculo 2</td>
+              <td>
+                Segunda
+                <p>10:00 - 12:00</p>
+              </td>
+              <td>
+                Segunda
+                <p>10:00 - 12:00</p>
+              </td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" className="filled-in" id="filled-in-box" checked="checked" />
+                <label for="filled-in-box"></label>
+              </td>
+              <td>Inglês 2</td>
+              <td>
+                Segunda
+                <p>10:00 - 12:00</p>
+              </td>
+              <td>
+                Segunda
+                <p>10:00 - 12:00</p>
+              </td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" className="filled-in" id="filled-in-box" checked="checked" />
+                <label for="filled-in-box"></label>
+              </td>
+              <td>Física 1</td>
+              <td>
+                Segunda
+                <p>10:00 - 12:00</p>
+              </td>
+              <td>
+                Segunda
+                <p>10:00 - 12:00</p>
+              </td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
 
-            <a className="secondary-content"><a className="waves-effect waves-light btn-large indigo">Concluir Pré-Matrícula</a></a>
-          </li>
-          <li className="collection-item avatar">
-            <span className="title">Title</span>
-
-            <a className="secondary-content"><i className="material-icons">grade</i></a>
-          </li>
-          <li className="collection-item avatar">
-            <span className="title">Title</span>
-
-            <a className="secondary-content"><i className="material-icons">grade</i></a>
-          </li>
-          <li className="collection-item"><div><span className="title"><b>Calculo 1</b></span>
-            <p>Segunda 8:00 - 10:00 <br />
-            Quarta 8:00 - 10:00</p>
-            <a className="secondary-content"><a className="waves-effect waves-light btn indigo">Escolher</a></a></div></li>
-        </ul>
+        <br />
+        <br />
 
 
 
         <div className="section center-align"><a className="waves-effect waves-light btn-large indigo">Concluir Pré-Matrícula</a></div>
-
 
 
       </div>

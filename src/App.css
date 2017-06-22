@@ -17,3 +17,24 @@ nav, .container {
     padding-left: 0;
   }
 }
+
+
+
+
+/* -------------------- TESTE SELECT */
+
+select{
+	display: inline;
+}
+
+.tam-checkbox{
+	width: 30px;
+}
+
+.tam-nome{
+	width: 400px;
+}
+
+.tam-creditos{
+	width: 40px;
+}

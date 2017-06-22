@@ -9,6 +9,7 @@ import PlanoDeEstudos from './components/PlanoDeEstudos';
 import InclusaoExclusao from './components/InclusaoExclusao';
 import PreMatriculaInicial from './components/PreMatriculaInicial';
 import PreMatricula from './components/PreMatricula';
+import QuebraPreRequisito from './components/QuebraPreRequisito';
 
 function isLoggedIn() {
 	if (localStorage.getItem('mAluno') && localStorage.getItem('sAluno')) {
@@ -29,6 +30,7 @@ const Routes = (
 	    <Route path="/inclusao-exclusao" component={InclusaoExclusao} />
 	    <Route path="/pre-matricula-inicial" component={PreMatriculaInicial} />
 	    <Route path="/pre-matricula" component={PreMatricula} />
+	    <Route path="/quebra-requisitos" component={QuebraPreRequisito} />
 	  </Route>
   </div>
 );
