@@ -5,16 +5,19 @@ class PedidoDeQuebra extends Component {
     constructor() {
     super();
     this.state = {
-      quebras: []
+      quebras: [],
+      isLoading: false
     }
   }
 
   fetchQuebras() {
+    this.setState({isLoading: true})
     axios.get('https://mo-api.herokuapp.com/api/quebra')
     .then((res) => {
-      this.setState({quebras: res.data.objects});
+      this.setState({quebras: res.data.objects, isLoading: false});
     })
     .catch((error) => {
+      this.setState({isLoading: false})
       alert(error);
     });
   }
@@ -61,10 +64,11 @@ class PedidoDeQuebra extends Component {
   }
 
   render() {
-    const { quebras } = this.state
+    const { quebras, isLoading } = this.state
     return (
       <div>
-        <div className="container">
+        <div className="container center-align">
+          {isLoading && <p>Carregando requisitos...</p>}
           <h3 className="center indigo-text darken-4">Pedidos de Quebra</h3>
           {quebras && quebras.map((q) => {
             const cssClass = q.status === "Aceito" ? "green collection-item" : "collection-item";
