@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import HeaderAdmin from './HeaderAdmin';
+import Footer from './Footer';
 
 class Admin extends Component {
     constructor() {
@@ -63,31 +65,36 @@ class Admin extends Component {
   render() {
     const { quebras } = this.state
     return (
-      <div className="container">
-        <h3 className="center indigo-text darken-4">Pedidos de Quebra</h3>
-        {quebras && quebras.map((q) => {
-          const cssClass = q.status === "Aceito" ? "green collection-item" : "collection-item";
-          return (
-            <ul className="collection" key={q.aluno.matricula+q.disciplina.codigo}>
-              <li className={cssClass}>
-                <p>Aluno: {q.aluno.nome + " " + q.aluno.sobrenome}</p>
-                <p>Disciplina: {q.disciplina.nome}</p>
-                <p>Status: {q.status}
-                  <a href="" className="secondary-content" onClick={(e) => this.rejectQuebra(e, q)}>
-                    <i className="material-icons reject-quebra">
-                      phonelink_erase
-                    </i>
-                  </a>
-                  <a href="" className="secondary-content" onClick={(e) => this.acceptQuebra(e, q)}>
-                    <i className="material-icons">
-                      done
-                    </i>
-                  </a>
-                </p>
-              </li>
-            </ul>
-          )
-        })}
+      <div>
+        <HeaderAdmin />
+        <div className="container">
+          <h3 className="center indigo-text darken-4">Pedidos de Quebra</h3>
+          {quebras && quebras.map((q) => {
+            const cssClass = q.status === "Aceito" ? "green collection-item" : "collection-item";
+            return (
+              <ul className="collection" key={q.aluno.matricula+q.disciplina.codigo}>
+                <li className={cssClass}>
+                  <p>Aluno: {q.aluno.nome + " " + q.aluno.sobrenome}</p>
+                  <p>Disciplina: {q.disciplina.nome}</p>
+                  <p>Status: {q.status}
+                    <a href="" className="secondary-content" onClick={(e) => this.rejectQuebra(e, q)}>
+                      <i className="material-icons reject-quebra">
+                        phonelink_erase
+                      </i>
+                    </a>
+                    <a href="" className="secondary-content" onClick={(e) => this.acceptQuebra(e, q)}>
+                      <i className="material-icons">
+                        done
+                      </i>
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            )
+          })}
+        </div>
+        {this.props.children}
+        <Footer />
       </div>
     );
   }

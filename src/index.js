@@ -11,6 +11,7 @@ import InclusaoExclusao from './components/InclusaoExclusao';
 import PreMatriculaInicial from './components/PreMatriculaInicial';
 import PreMatricula from './components/PreMatricula';
 import QuebraPreRequisito from './components/QuebraPreRequisito';
+import TelaInicialAdmin from './components/TelaInicialAdmin';
 
 function isLoggedIn() {
 	if (localStorage.getItem('mAluno') && localStorage.getItem('sAluno')) {
@@ -23,7 +24,7 @@ function isLoggedIn() {
 
 const Routes = (
 	<div>
-		<Route path="/login" component={Login} />
+	  <Route path="/login" component={Login} />
 	  <Route path="/" component={App} onEnter={isLoggedIn}>
 	    <IndexRoute component={TelaInicial}/>
 	    <Route path="/grade" component={GradeCurricular} />
@@ -33,7 +34,9 @@ const Routes = (
 	    <Route path="/pre-matricula" component={PreMatricula} />
 	    <Route path="/quebra-requisitos" component={QuebraPreRequisito} />
 	  </Route>
-	  <Route path="/admin" component={Admin} />
+	  <Route path="/admin" component={Admin}>
+	  	<IndexRoute component={TelaInicialAdmin} />
+	  </Route>
   </div>
 );
 
