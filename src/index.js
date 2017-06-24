@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
-import Admin from './components/Admin';
 import Login from './components/Login';
 import TelaInicial from './components/TelaInicial';
 import GradeCurricular from './components/GradeCurricular';
@@ -11,7 +10,9 @@ import InclusaoExclusao from './components/InclusaoExclusao';
 import PreMatriculaInicial from './components/PreMatriculaInicial';
 import PreMatricula from './components/PreMatricula';
 import QuebraPreRequisito from './components/QuebraPreRequisito';
-import TelaInicialAdmin from './components/TelaInicialAdmin';
+import Admin from './components/admin/Admin';
+import TelaInicialAdmin from './components/admin/TelaInicialAdmin';
+import PedidoDeQuebra from './components/admin/PedidoDeQuebra';
 
 function isLoggedIn() {
 	if (localStorage.getItem('mAluno') && localStorage.getItem('sAluno')) {
@@ -36,6 +37,7 @@ const Routes = (
 	  </Route>
 	  <Route path="/admin" component={Admin}>
 	  	<IndexRoute component={TelaInicialAdmin} />
+	    <Route path="/admin/quebra-requisitos" component={PedidoDeQuebra} />
 	  </Route>
   </div>
 );

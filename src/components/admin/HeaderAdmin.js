@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logoUenf from './imagens/logoUenf.png';
+import logoUenf from '../imagens/logoUenf.png';
 import { browserHistory } from 'react-router';
 
 class HeaderAdmin extends Component {
@@ -16,10 +16,10 @@ class HeaderAdmin extends Component {
             <div className="nav-content">
               <ul className="tabs tabs-transparent">
 
-                <li className="tab"><a onClick={() => browserHistory.push('admin')}>Notificações</a></li>
-                <li className="tab"><a onClick={() => browserHistory.push('inclusao-exclusao')}>Cadastros</a></li>
-                <li className="tab"><a onClick={() => browserHistory.push('grade')}>Editar Sistema</a></li>
-                <li className="tab"><a onClick={() => browserHistory.push('plano-estudos')}>Quebra de pré-requisitos</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('/admin')}>Notificações</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('/admin/cadastros')}>Cadastros</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('/admin/editar')}>Editar Sistema</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('/admin/quebra-requisitos')}>Quebra de pré-requisitos</a></li>
               </ul>
             </div>
         </nav>

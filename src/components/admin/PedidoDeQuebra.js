@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import HeaderAdmin from './HeaderAdmin';
-import Footer from './Footer';
 
-class Admin extends Component {
+class PedidoDeQuebra extends Component {
     constructor() {
     super();
     this.state = {
@@ -66,7 +64,6 @@ class Admin extends Component {
     const { quebras } = this.state
     return (
       <div>
-        <HeaderAdmin />
         <div className="container">
           <h3 className="center indigo-text darken-4">Pedidos de Quebra</h3>
           {quebras && quebras.map((q) => {
@@ -93,11 +90,9 @@ class Admin extends Component {
             )
           })}
         </div>
-        {this.props.children}
-        <Footer />
       </div>
     );
   }
 }
 
-export default Admin;
+export default PedidoDeQuebra;
