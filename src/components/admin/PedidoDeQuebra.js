@@ -67,8 +67,8 @@ class PedidoDeQuebra extends Component {
     const { quebras, isLoading } = this.state
     return (
       <div>
-        <div className="container center-align">
-          {isLoading && <p>Carregando requisitos...</p>}
+        <div className="container">
+          {isLoading && <p className="center-align">Carregando requisitos...</p>}
           <h3 className="center indigo-text darken-4">Pedidos de Quebra</h3>
           {quebras && quebras.map((q) => {
             const cssClass = q.status === "Aceito" ? "green collection-item" : "collection-item";
