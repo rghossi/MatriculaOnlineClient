@@ -13,35 +13,35 @@ class CadastroAluno extends Component {
 
                   <div className="row">
                     <div className="col col s4 offset-s2">
-                      <label for="first_name">Nome</label>
+                      <label htmlFor="first_name">Nome</label>
                       <input id="first_name" type="text" />
                     </div>
                     <div className="col s12 m4">
-                      <label for="first_name">Sobrenome</label>
-                      <input id="first_name" type="text" />
+                      <label htmlFor="last_name">Sobrenome</label>
+                      <input id="last_name" type="text" />
                     </div>
                   </div>
 
                   <div className="row">
                     <div className="col col s4 offset-s2">
-                      <label for="first_name">Matrícula</label>
-                      <input id="first_name" type="text" />
+                      <label htmlFor="matricula">Matrícula</label>
+                      <input id="matricula" type="text" />
                     </div>
                     <div className="col s12 m4">
-                      <label for="first_name">Data de nascimento</label>
+                      <label>Data de nascimento</label>
                       <input type="date" className="datepicker" />
                     </div>
                   </div>
 
                   <div className="row">
                     <div className="col col s4 offset-s2">
-                      <label for="email">Email</label>
+                      <label htmlFor="email">Email</label>
                       <input id="email" type="email" className="validate" />
                     </div>
 
                     <div className="col s12 m4">
-                      <label for="first_name">CPF</label>
-                      <input id="first_name" type="text" />
+                      <label htmlFor="cpf">CPF</label>
+                      <input id="cpf" type="text" />
                     </div>
                   </div>
 

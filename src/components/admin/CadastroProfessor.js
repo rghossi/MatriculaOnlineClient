@@ -13,29 +13,29 @@ class CadastroProfessor extends Component {
 
                   <div className="row">
                     <div className="col col s4 offset-s2">
-                      <label for="first_name">Nome</label>
+                      <label htmlFor="first_name">Nome</label>
                       <input id="first_name" type="text" />
                     </div>
                     <div className="col s12 m4">
-                      <label for="first_name">Sobrenome</label>
-                      <input id="first_name" type="text" />
+                      <label htmlFor="last_name">Sobrenome</label>
+                      <input id="last_name" type="text" />
                     </div>
                   </div>
 
                   <div className="row">
                     <div className="col col s4 offset-s2">
-                      <label for="first_name">Matrícula</label>
-                      <input id="first_name" type="text" />
+                      <label htmlFor="matricula">Matrícula</label>
+                      <input id="matricula" type="text" />
                     </div>
                     <div className="col s12 m4">
-                      <label for="first_name">Senha</label>
-                      <input id="first_name" type="text" />
+                      <label htmlFor="password">Senha</label>
+                      <input id="password" type="text" />
                     </div>
                   </div>
 
                   <div className="row">
                     <div className="col col s4 offset-s4">
-                      <label for="email">Email</label>
+                      <label htmlFor="email">Email</label>
                       <input id="email" type="email" className="validate" />
                     </div>
                   </div>

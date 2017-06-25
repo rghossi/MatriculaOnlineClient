@@ -13,20 +13,20 @@ class CadastroMateria extends Component {
 
                   <div className="row">
                     <div className="col col s8 offset-s2">
-                      <label for="first_name">Nome da matéria</label>
-                      <input id="first_name" type="text" />
+                      <label htmlFor="name">Nome da matéria</label>
+                      <input id="name" type="text" />
                     </div>
                   </div>
 
                   <div className="row">
                     <div className="col col s4 offset-s2">
-                      <label for="first_name">Código</label>
-                      <input id="first_name" type="text" />
+                      <label htmlFor="codigo">Código</label>
+                      <input id="codigo" type="text" />
                     </div>
 
                     <div className="col s12 m4">
-                      <label for="first_name">Semestre</label>
-                      <input id="first_name" type="text" />
+                      <label htmlFor="semestre">Semestre</label>
+                      <input id="semestre" type="text" />
                     </div>
                   </div>
 
