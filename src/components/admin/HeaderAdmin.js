@@ -17,8 +17,8 @@ class HeaderAdmin extends Component {
               <ul className="tabs tabs-transparent">
 
                 <li className="tab"><a onClick={() => browserHistory.push('/admin')}>Notificações</a></li>
-                <li className="tab"><a onClick={() => browserHistory.push('/admin/cadastros')}>Cadastros</a></li>
-                <li className="tab"><a onClick={() => browserHistory.push('/admin/editar')}>Editar Sistema</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('/admin/cadastros-inicial')}>Cadastros</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('/admin/editar-inicial')}>Editar Sistema</a></li>
                 <li className="tab"><a onClick={() => browserHistory.push('/admin/quebra-requisitos')}>Quebra de pré-requisitos</a></li>
               </ul>
             </div>

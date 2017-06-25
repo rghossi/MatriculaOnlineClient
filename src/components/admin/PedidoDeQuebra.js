@@ -73,24 +73,33 @@ class PedidoDeQuebra extends Component {
           {quebras && quebras.map((q) => {
             const cssClass = q.status === "Aceito" ? "green collection-item" : "collection-item";
             return (
-              <ul className="collection" key={q.aluno.matricula+q.disciplina.codigo}>
-                <li className={cssClass}>
-                  <p>Aluno: {q.aluno.nome + " " + q.aluno.sobrenome}</p>
-                  <p>Disciplina: {q.disciplina.nome}</p>
-                  <p>Status: {q.status}
-                    <a href="" className="secondary-content" onClick={(e) => this.rejectQuebra(e, q)}>
-                      <i className="material-icons reject-quebra">
-                        phonelink_erase
-                      </i>
-                    </a>
-                    <a href="" className="secondary-content" onClick={(e) => this.acceptQuebra(e, q)}>
-                      <i className="material-icons">
-                        done
-                      </i>
-                    </a>
-                  </p>
-                </li>
-              </ul>
+              <div className="collection" key={q.aluno.matricula+q.disciplina.codigo}>
+                <div className={cssClass}>
+
+                  <div className="row">
+                    <div className="col s4">
+                      <p><b>Aluno:</b> {q.aluno.nome + " " + q.aluno.sobrenome}</p>
+                      <p><b>Disciplina:</b> {q.disciplina.nome}</p>
+                      <p><b>Status:</b> {q.status}</p>
+                    </div>
+
+                    <div className="col s8">
+                      <p><b>Motivo:</b> Preciso fazer as duas matérias para nivelar minha grade.</p>
+                    </div>
+                  </div>
+
+                  <div className="row">
+                    <div className="col s2 offset-s4">
+                        <a className="waves-effect waves-light btn green accent-4 white-text" onClick={(e) => this.acceptQuebra(e, q)}>Permitir</a>
+                    </div>
+
+                    <div className="col s2">
+                        <a className="waves-effect waves-light btn red white-text" onClick={(e) => this.rejectQuebra(e, q)}>Recusar</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             )
           })}
         </div>

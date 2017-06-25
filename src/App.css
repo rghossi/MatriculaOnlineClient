@@ -44,3 +44,7 @@ select{
 .tam-creditos{
 	width: 40px;
 }
+
+.borda{
+	border: 1px grey solid;
+}

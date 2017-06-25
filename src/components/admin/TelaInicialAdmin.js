@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router';
 
 class TelaInicialAdmin extends Component {
   render() {
@@ -16,7 +17,7 @@ class TelaInicialAdmin extends Component {
                           <span className="card-title cyan-text accent-1"><b>Pedido de Quebra de Pré-Requisito</b></span>
                           <p>Pedido de quebra de Pré-Requisito do Aluno Rafael Gossi</p>
                           <br />
-                          <div className="section center-align"><a className="waves-effect waves-light btn cyan indigo-text text-darken-4">Verificar</a></div>
+                          <div className="section center-align"><a className="waves-effect waves-light btn cyan indigo-text text-darken-4" onClick={() => browserHistory.push('/admin/quebra-requisitos')}>Verificar</a></div>
                         </div>
                       </div>
                   </div>
@@ -27,7 +28,7 @@ class TelaInicialAdmin extends Component {
                           <span className="card-title cyan-text accent-1"><b>Pedido de Quebra de Pré-Requisito</b></span>
                           <p>Pedido de quebra de Pré-Requisito do Aluno Gabriel Fiorese</p>
                           <br />
-                          <div className="section center-align"><a className="waves-effect waves-light btn indigo cyan indigo-text text-darken-4">Verificar</a></div>
+                          <div className="section center-align"><a className="waves-effect waves-light btn indigo cyan indigo-text text-darken-4" onClick={() => browserHistory.push('/admin/quebra-requisitos')}>Verificar</a></div>
                         </div>
                       </div>
                   </div>
