@@ -17,12 +17,10 @@ class Header extends Component {
               <ul className="tabs tabs-transparent">
 
                 <li className="tab"><a onClick={() => browserHistory.push('pre-matricula-inicial')}>Pré-Matrícula</a></li>
-                <li className="tab"><a onClick={() => browserHistory.push('inclusao-exclusao')}>Inclusão/Exclusão</a></li>
+                <li className="tab"><a onClick={() => browserHistory.push('inclusao-exclusao-inicial')}>Inclusão/Exclusão</a></li>
                 <li className="tab"><a onClick={() => browserHistory.push('grade')}>Grade Curricular</a></li>
                 <li className="tab"><a onClick={() => browserHistory.push('plano-estudos')}>Plano de estudos</a></li>
                 <li className="tab"><a onClick={() => browserHistory.push('quebra-requisitos')}>Quebra de requisito</a></li>
-                <li className="tab"><a onClick={() => browserHistory.push('extrato')}>Extrato</a></li>
-                <li className="tab"><a onClick={() => browserHistory.push('contate-nos')}>Contate-nos</a></li>
               </ul>
             </div>
         </nav>

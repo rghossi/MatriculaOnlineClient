@@ -6,6 +6,7 @@ import Login from './components/Login';
 import TelaInicial from './components/TelaInicial';
 import GradeCurricular from './components/GradeCurricular';
 import PlanoDeEstudos from './components/PlanoDeEstudos';
+import InclusaoExclusaoInicial from './components/InclusaoExclusaoInicial';
 import InclusaoExclusao from './components/InclusaoExclusao';
 import PreMatriculaInicial from './components/PreMatriculaInicial';
 import PreMatricula from './components/PreMatricula';
@@ -41,6 +42,7 @@ const Routes = (
 	    <IndexRoute component={TelaInicial}/>
 	    <Route path="/grade" component={GradeCurricular} />
 	    <Route path="/plano-estudos" component={PlanoDeEstudos} />
+	    <Route path="/inclusao-exclusao-inicial" component={InclusaoExclusaoInicial} />
 	    <Route path="/inclusao-exclusao" component={InclusaoExclusao} />
 	    <Route path="/pre-matricula-inicial" component={PreMatriculaInicial} />
 	    <Route path="/pre-matricula" component={PreMatricula} />
