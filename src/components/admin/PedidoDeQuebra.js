@@ -84,7 +84,7 @@ class PedidoDeQuebra extends Component {
                     </div>
 
                     <div className="col s8">
-                      <p><b>Motivo:</b> Preciso fazer as duas matérias para nivelar minha grade.</p>
+                      <p><b>Motivo:</b> {q.message} </p>
                     </div>
                   </div>
 
