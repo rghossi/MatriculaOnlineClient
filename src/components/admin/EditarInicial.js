@@ -15,7 +15,7 @@ class EditarInicial extends Component {
                         <div className="card  indigo darken-4">
                           <div className="card-content white-text">
                             <span className="card-title cyan-text accent-1"><b>Matéria</b></span>
-                            <p>Cadastrar uma nova matéria.</p>
+                            <p>Editar uma matéria.</p>
                             <br />
                             <div className="section center-align"><a className="waves-effect waves-light btn cyan indigo-text text-darken-4" onClick={() => browserHistory.push('/admin/editar-escolher-materia')}>Editar</a></div>
                           </div>
@@ -26,7 +26,7 @@ class EditarInicial extends Component {
                         <div className="card  indigo darken-4">
                           <div className="card-content white-text">
                             <span className="card-title cyan-text accent-1"><b>Professor</b></span>
-                            <p>Cadastrar um novo professor.</p>
+                            <p>Editar um professor.</p>
                             <br />
                             <div className="section center-align"><a className="waves-effect waves-light btn indigo cyan indigo-text text-darken-4" onClick={() => browserHistory.push('/admin/editar-escolher-professor')}>Editar</a></div>
                           </div>
@@ -37,7 +37,7 @@ class EditarInicial extends Component {
                         <div className="card  indigo darken-4">
                           <div className="card-content white-text">
                             <span className="card-title cyan-text accent-1"><b>Aluno</b></span>
-                            <p>Cadastrar um novo aluno.</p>
+                            <p>Editar um aluno.</p>
                             <br />
                             <div className="section center-align"><a className="waves-effect waves-light btn indigo cyan indigo-text text-darken-4" onClick={() => browserHistory.push('/admin/editar-escolher-aluno')}>Editar</a></div>
                           </div>
