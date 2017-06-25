@@ -43,7 +43,16 @@ class CadastroProfessor extends Component {
                   <br />
 
                   <div className="row">
-                    <div className="section center-align"><a className="waves-effect waves-light btn-large indigo">Cadastrar Professor</a></div>
+                    <div className="col col s6">
+                      <div className="section right-align">
+                        <a className="waves-effect waves-light btn-large indigo center-align">Cadastrar</a>
+                      </div>
+                    </div>
+                    <div className="col col s6">
+                      <div className="section left-align">
+                        <a className="waves-effect waves-light btn-large indigo" onClick={() => browserHistory.push('/admin/cadastros-inicial')}>Cancelar</a>
+                      </div>
+                    </div>
                   </div>
 
               </form>
