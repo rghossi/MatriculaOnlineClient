@@ -9,6 +9,18 @@ class EditarEscolherAluno extends Component {
               <h3 className="center indigo-text darken-4">Escolha o Aluno</h3>
               <br />
               <div className="card-panel borda">
+              <label for="turma">Turma</label>
+              <select>
+                <option value="" disabled selected></option>
+                <option value="1">Turma 1</option>
+                <option value="2">Turma 2</option>
+                <option value="3">Turma 3</option>
+              </select>
+
+              <br />
+              <br />
+
+              <label for="aluno">Aluno</label>
               <select>
                 <option value="" disabled selected></option>
                 <option value="1">Aluno 1</option>
