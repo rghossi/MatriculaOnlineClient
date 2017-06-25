@@ -16,6 +16,7 @@ class Header extends Component {
             <div className="nav-content">
               <ul className="tabs tabs-transparent">
 
+                <li className="tab"><a onClick={() => browserHistory.push('')}>Home</a></li>
                 <li className="tab"><a onClick={() => browserHistory.push('pre-matricula-inicial')}>Pré-Matrícula</a></li>
                 <li className="tab"><a onClick={() => browserHistory.push('inclusao-exclusao-inicial')}>Inclusão/Exclusão</a></li>
                 <li className="tab"><a onClick={() => browserHistory.push('grade')}>Grade Curricular</a></li>
