@@ -57,11 +57,11 @@ const Routes = (
 	    <Route path="/admin/cadastro-professor" component={CadastroProfessor} />
 	    <Route path="/admin/editar-inicial" component={EditarInicial} />
 	    <Route path="/admin/editar-escolher-aluno" component={EditarEscolherAluno} />
-	    <Route path="/admin/editar-aluno" component={EditarAluno} />
+	    <Route path="/admin/editar-aluno/:matricula" component={EditarAluno} />
 	    <Route path="/admin/editar-escolher-materia" component={EditarEscolherMateria} />
-	    <Route path="/admin/editar-materia" component={EditarMateria} />
+	    <Route path="/admin/editar-materia/:codigo" component={EditarMateria} />
 	    <Route path="/admin/editar-escolher-professor" component={EditarEscolherProfessor} />
-	    <Route path="/admin/editar-professor" component={EditarProfessor} />
+	    <Route path="/admin/editar-professor/:matricula" component={EditarProfessor} />
 	  </Route>
   </div>
 );
