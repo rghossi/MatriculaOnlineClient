@@ -28,39 +28,44 @@ class PedidoDeQuebra extends Component {
 
   acceptQuebra(e, q) {
     e.preventDefault();
-    // axios.put('https://mo-api.herokuapp.com/api/quebra', {
-    //   status: "Aceito",
-    //   "q": {
-    //     "filters": [{
-    //       "aluno_matricula": q.aluno_matricula, "disciplina_codigo": q.disciplina_codigo
-    //     }]
-    //   }
-    // })
-    // .then((res) => {
-    //   this.fetchQuebras();
-    // })
-    // .catch((error) => {
-    //   alert(error);
-    // });
+    axios.put('https://mo-api.herokuapp.com/api/quebra', {
+      status: "Aceito",
+      "q": {
+        "filters": [{
+          "name": "aluno_matricula", "op": "eq", "val": parseInt(q.aluno_matricula)
+        },{
+          "name": "disciplina_codigo", "op": "eq", val: q.disciplina_codigo
+        }]
+      }
+    })
+    .then((res) => {
+      this.fetchQuebras();
+    })
+    .catch((error) => {
+      alert(error);
+    });
   }
 
   rejectQuebra(e, q) {
     e.preventDefault();
-    // if (confirm("Tem certeza?")){
-    //   axios.put('https://mo-api.herokuapp.com/api/quebra', {
-    //     "q": {
-    //       "filters": [{
-    //         "aluno_matricula": q.aluno_matricula, "disciplina_codigo": q.disciplina_codigo
-    //       }]
-    //     }
-    //   })
-    //   .then((res) => {
-    //     this.fetchQuebras();
-    //   })
-    //   .catch((error) => {
-    //     alert(error);
-    //   });
-    // }
+    if (confirm("Tem certeza?")){
+      axios.put('https://mo-api.herokuapp.com/api/quebra', {
+        status: "Rejeitado",
+        "q": {
+          "filters": [{
+            "name": "aluno_matricula", "op": "eq", "val": parseInt(q.aluno_matricula)
+          },{
+            "name": "disciplina_codigo", "op": "eq", val: q.disciplina_codigo
+          }]
+        }
+      })
+      .then((res) => {
+        this.fetchQuebras();
+      })
+      .catch((error) => {
+        alert(error);
+      });
+    }
   }
 
   render() {
@@ -88,7 +93,7 @@ class PedidoDeQuebra extends Component {
                     </div>
                   </div>
 
-                  <div className="row">
+                  {q.status === "Pending" && <div className="row">
                     <div className="col s2 offset-s4">
                         <a className="waves-effect waves-light btn green accent-4 white-text" onClick={(e) => this.acceptQuebra(e, q)}>Permitir</a>
                     </div>
@@ -96,7 +101,7 @@ class PedidoDeQuebra extends Component {
                     <div className="col s2">
                         <a className="waves-effect waves-light btn red white-text" onClick={(e) => this.rejectQuebra(e, q)}>Recusar</a>
                     </div>
-                  </div>
+                  </div>}
 
                 </div>
               </div>
