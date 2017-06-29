@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import logoUenf from './imagens/logoUenf.png';
 import { browserHistory } from 'react-router';
+import {Link} from "react-router";
 
 class Header extends Component {
+  logout() {
+    localStorage.removeItem('mAluno');
+    localStorage.removeItem('sAluno');
+  }
   render() {
     return (
         <nav className="nav-extended indigo darken-4">
@@ -10,7 +15,7 @@ class Header extends Component {
               <a className="brand-logo"><img id="logotipouenf" style={{width: '150px'}} src={logoUenf} alt="logo" /></a>
               <a href="#" className="button-collapse"><i className="material-icons">menu</i></a>
               <ul className="right hide-on-med-and-down">
-                <li><a href="#" className="amber-text text-lighten-2">About</a></li>
+              <li><Link className="amber-text text-lighten-2" to="/login" onClick={this.logout}>Sair</Link></li>
               </ul>
             </div>
             <div className="nav-content">
